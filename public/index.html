@@ -135,7 +135,20 @@
         timestamp: new Date().toISOString()
       };
 
-      console.log("SUBMITTING:", submission);
+      try {
+        const response = await fetch("https://YOUR_BACKEND.onrender.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(submission)
+        });
+
+        if (!response.ok) throw new Error("Submission failed");
+        console.log("✅ Submission saved to backend!");
+      } catch (err) {
+        console.error("❌ Failed to submit:", err);
+      }
 
       ratedDishes.add(dish);
       localStorage.setItem("ratedDishes", JSON.stringify([...ratedDishes]));
@@ -155,3 +168,17 @@
   </script>
 </body>
 </html>
+
+        const response = await fetch("https://taste-collector-backend.onrender.com/submit", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(submission)
+        });
+
+        if (!response.ok) throw new Error("Submission failed");
+        console.log("✅ Submission saved to backend!");
+      } catch (err) {
+        console.error("❌ Failed to submit:", err);
+      }
