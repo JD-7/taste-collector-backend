@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Taste Vector Collector</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 p-6 text-gray-900">
+  <div class="max-w-xl mx-auto">
+    <h1 class="text-2xl font-bold text-center mb-4">Rate the Taste</h1>
+    <p class="text-center mb-6">Help us map the flavor of Indian dishes</p>
+
+    <div class="mb-6">
+      <label class="block font-semibold mb-1">Progress</label>
+      <div class="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
+        <div id="progressBar" class="bg-green-500 h-4 transition-all duration-300" style="width: 0%"></div>
+      </div>
+      <p id="progressText" class="text-sm mt-1 text-right text-gray-600">0 of 20 dishes rated</p>
+    </div>
+
+    <form id="tasteForm" class="space-y-6">
+      <div>
+        <label for="username" class="block font-semibold mb-1">Your Name</label>
+        <input type="text" id="username" name="username" required class="w-full p-2 border border-gray-300 rounded" placeholder="Enter your name">
+      </div>
+
+      <div>
+        <label for="dish" class="block font-semibold mb-1">Dish</label>
+        <select id="dish" required class="w-full p-2 border border-gray-300 rounded">
+          <option value="">Select a dish...</option>
+        </select>
+      </div>
+
+      <div id="currentDish" class="text-lg font-medium text-center text-blue-700"></div>
+
+      <div id="sliders" class="space-y-4"></div>
+
+      <div>
+        <label for="notes" class="block font-semibold mb-1">Notes (optional)</label>
+        <textarea id="notes" class="w-full p-2 border border-gray-300 rounded" rows="2" placeholder="e.g. My version has extra tamarind..."></textarea>
+      </div>
+
+      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Submit</button>
+    </form>
+
+    <p id="status" class="text-green-600 mt-4 text-center hidden">Submission saved!</p>
+  </div>
+
+  <script>
+    const dishes = [
+      "Aamras", "Dhokla", "Palak Paneer", "Masala Dosa", "Pani Puri", "Rasam", "Gajar Halwa",
+      "Coconut Chutney", "Kadhi", "Vegetable Pulao", "Cucumber Raita", "Chana Masala", "Thepla",
+      "Sabudana Khichdi", "Moong Dal Halwa", "Paneer Butter Masala", "Vegetable Biryani",
+      "Besan Ladoo", "Aloo Paratha", "Rajma Chawal"
+    ];
+
+    const tastes = ["Sweet", "Sour", "Salty", "Bitter", "Umami", "Spicy"];
+    const ratedDishes = new Set(JSON.parse(localStorage.getItem("ratedDishes") || "[]"));
+
+    const dishSelect = document.getElementById("dish");
+    const currentDishDisplay = document.getElementById("currentDish");
+
+    function populateDishOptions() {
+      dishSelect.innerHTML = '<option value="">Select a dish...</option>';
+      dishes.filter(dish => !ratedDishes.has(dish)).forEach(dish => {
+        const option = document.createElement("option");
+        option.value = dish;
+        option.textContent = dish;
+        dishSelect.appendChild(option);
+      });
+    }
+
+    dishSelect.addEventListener("change", () => {
+      currentDishDisplay.textContent = dishSelect.value ? `Currently rating: ${dishSelect.value}` : "";
+    });
+
+    const slidersContainer = document.getElementById("sliders");
+    tastes.forEach((taste, i) => {
+      const wrapper = document.createElement("div");
+      wrapper.innerHTML = `
+        <label for="taste${i}" class="block font-semibold mb-1">${taste}</label>
+        <div class="flex justify-between text-xs text-gray-600 mb-1">
+          ${[...Array(11).keys()].map(n => `<span>${n}</span>`).join('')}
+        </div>
+        <input type="range" id="taste${i}" name="taste${i}" min="0" max="10" value="0" class="w-full">
+      `;
+      slidersContainer.appendChild(wrapper);
+    });
+
+    function updateProgressBar() {
+      const total = dishes.length;
+      const completed = ratedDishes.size;
+      const percent = Math.round((completed / total) * 100);
+      document.getElementById("progressBar").style.width = `${percent}%`;
+      document.getElementById("progressText").textContent = `${completed} of ${total} dishes rated`;
+    }
+
+    updateProgressBar();
+    populateDishOptions();
+
+    document.getElementById("tasteForm").addEventListener("submit", async e => {
+      e.preventDefault();
+
+      const username = document.getElementById("username").value.trim();
+      const taste_vector = tastes.map((_, i) => parseInt(document.getElementById(`taste${i}`).value));
+      const dish = dishSelect.value;
+      const notes = document.getElementById("notes").value;
+
+      const submission = {
+        user: username,
+        dish,
+        taste_vector,
+        notes,
+        timestamp: new Date().toISOString()
+      };
+
+      console.log("SUBMITTING:", submission);
+
+      ratedDishes.add(dish);
+      localStorage.setItem("ratedDishes", JSON.stringify([...ratedDishes]));
+      updateProgressBar();
+      populateDishOptions();
+      currentDishDisplay.textContent = "";
+
+      document.getElementById("status").classList.remove("hidden");
+      setTimeout(() => document.getElementById("status").classList.add("hidden"), 3000);
+      e.target.reset();
+    });
+  </script>
+</body>
+</html>

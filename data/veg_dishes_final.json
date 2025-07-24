@@ -1,0 +1,342 @@
+[
+  {
+    "name": "Aamras",
+    "tags": [
+      "sweet",
+      "fruity",
+      "tropical"
+    ],
+    "taste_vector": [
+      0.9,
+      0.1,
+      0.0,
+      0.2,
+      0.1,
+      0.2
+    ],
+    "image": "aamras.png"
+  },
+  {
+    "name": "Dhokla",
+    "tags": [
+      "sour",
+      "soft",
+      "savory"
+    ],
+    "taste_vector": [
+      0.3,
+      0.8,
+      0.1,
+      0.3,
+      0.1,
+      0.2
+    ],
+    "image": "dhokla.png"
+  },
+  {
+    "name": "Palak Paneer",
+    "tags": [
+      "creamy",
+      "mild",
+      "earthy"
+    ],
+    "taste_vector": [
+      0.2,
+      0.2,
+      0.3,
+      0.9,
+      0.6,
+      0.2
+    ],
+    "image": "palak_paneer.png"
+  },
+  {
+    "name": "Masala Dosa",
+    "tags": [
+      "spicy",
+      "crispy",
+      "earthy"
+    ],
+    "taste_vector": [
+      0.3,
+      0.2,
+      0.7,
+      0.3,
+      0.5,
+      0.1
+    ],
+    "image": "masala_dosa.png"
+  },
+  {
+    "name": "Pani Puri",
+    "tags": [
+      "spicy",
+      "tangy",
+      "minty"
+    ],
+    "taste_vector": [
+      0.2,
+      0.9,
+      0.8,
+      0.1,
+      0.1,
+      0.3
+    ],
+    "image": "pani_puri.png"
+  },
+  {
+    "name": "Rasam",
+    "tags": [
+      "sour",
+      "spicy",
+      "light"
+    ],
+    "taste_vector": [
+      0.1,
+      0.9,
+      0.9,
+      0.0,
+      0.2,
+      0.1
+    ],
+    "image": "rasam.png"
+  },
+  {
+    "name": "Gajar Halwa",
+    "tags": [
+      "sweet",
+      "warm",
+      "nutty"
+    ],
+    "taste_vector": [
+      0.9,
+      0.1,
+      0.1,
+      0.5,
+      0.4,
+      0.1
+    ],
+    "image": "gajar_ka_halwa.png"
+  },
+  {
+    "name": "Coconut Chutney",
+    "tags": [
+      "cooling",
+      "nutty",
+      "creamy"
+    ],
+    "taste_vector": [
+      0.4,
+      0.2,
+      0.1,
+      0.8,
+      0.3,
+      0.9
+    ],
+    "image": "coconut_chutney.png"
+  },
+  {
+    "name": "Kadhi",
+    "tags": [
+      "sour",
+      "creamy",
+      "herby"
+    ],
+    "taste_vector": [
+      0.2,
+      0.8,
+      0.2,
+      0.7,
+      0.3,
+      0.4
+    ],
+    "image": "kadhi.png"
+  },
+  {
+    "name": "Vegetable Pulao",
+    "tags": [
+      "savory",
+      "earthy",
+      "mild"
+    ],
+    "taste_vector": [
+      0.3,
+      0.2,
+      0.2,
+      0.4,
+      0.6,
+      0.2
+    ],
+    "image": "vegetable_pulao.png"
+  },
+  {
+    "name": "Cucumber Raita",
+    "tags": [
+      "cooling",
+      "creamy",
+      "mild"
+    ],
+    "taste_vector": [
+      0.3,
+      0.1,
+      0.1,
+      0.8,
+      0.2,
+      0.9
+    ],
+    "image": "cucumber_raita.png"
+  },
+  {
+    "name": "Chana Masala",
+    "tags": [
+      "spicy",
+      "earthy",
+      "tangy"
+    ],
+    "taste_vector": [
+      0.2,
+      0.5,
+      0.7,
+      0.3,
+      0.6,
+      0.2
+    ],
+    "image": "chana_masala.png"
+  },
+  {
+    "name": "Thepla",
+    "tags": [
+      "spicy",
+      "earthy",
+      "herby"
+    ],
+    "taste_vector": [
+      0.2,
+      0.4,
+      0.6,
+      0.2,
+      0.5,
+      0.2
+    ],
+    "image": "thepla.png"
+  },
+  {
+    "name": "Sabudana Khichdi",
+    "tags": [
+      "mild",
+      "nutty",
+      "sweet-savory"
+    ],
+    "taste_vector": [
+      0.5,
+      0.2,
+      0.1,
+      0.4,
+      0.3,
+      0.4
+    ],
+    "image": "sabudana_khichdi.png"
+  },
+  {
+    "name": "Moong Dal Halwa",
+    "tags": [
+      "sweet",
+      "nutty",
+      "rich"
+    ],
+    "taste_vector": [
+      0.9,
+      0.1,
+      0.1,
+      0.6,
+      0.5,
+      0.1
+    ],
+    "image": "moongdal_halwa.png"
+  },
+  {
+    "name": "Paneer Butter Masala",
+    "tags": [
+      "creamy",
+      "rich",
+      "mild-spicy"
+    ],
+    "taste_vector": [
+      0.4,
+      0.2,
+      0.4,
+      0.9,
+      0.6,
+      0.2
+    ],
+    "image": "paneer_butter_masala.png"
+  },
+  {
+    "name": "Vegetable Biryani",
+    "tags": [
+      "spicy",
+      "aromatic",
+      "earthy"
+    ],
+    "taste_vector": [
+      0.3,
+      0.3,
+      0.8,
+      0.4,
+      0.6,
+      0.2
+    ],
+    "image": "vegetable_biriyani.png"
+  },
+  {
+    "name": "Besan Ladoo",
+    "tags": [
+      "sweet",
+      "nutty",
+      "grainy"
+    ],
+    "taste_vector": [
+      0.9,
+      0.1,
+      0.0,
+      0.5,
+      0.5,
+      0.1
+    ],
+    "image": "besan_ladoo.png"
+  },
+  {
+    "name": "Aloo Paratha",
+    "tags": [
+      "earthy",
+      "mild-spicy",
+      "comfort"
+    ],
+    "taste_vector": [
+      0.4,
+      0.2,
+      0.5,
+      0.4,
+      0.7,
+      0.2
+    ],
+    "image": "aloo_paratha.png"
+  },
+  {
+    "name": "Rajma Chawal",
+    "tags": [
+      "savory",
+      "comfort",
+      "mild-spicy"
+    ],
+    "taste_vector": [
+      0.3,
+      0.2,
+      0.5,
+      0.4,
+      0.7,
+      0.2
+    ],
+    "image": "rajma_chawal.png"
+  }
+]
