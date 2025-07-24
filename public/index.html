@@ -45,6 +45,7 @@
     </form>
 
     <p id="status" class="text-green-600 mt-4 text-center hidden">Submission saved!</p>
+    <button id="switchUserBtn" class="mt-4 text-sm text-red-500 underline w-full">Switch User</button>
   </div>
 
   <script>
@@ -126,6 +127,10 @@
       document.getElementById("status").classList.remove("hidden");
       setTimeout(() => document.getElementById("status").classList.add("hidden"), 3000);
       e.target.reset();
+    });
+    document.getElementById("switchUserBtn").addEventListener("click", () => {
+      localStorage.removeItem("tasteCollectorUser");
+      window.location.reload();  // simple way to reset the state
     });
   </script>
 </body>
