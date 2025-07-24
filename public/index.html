@@ -11,41 +11,44 @@
     <h1 class="text-2xl font-bold text-center mb-4">Rate the Taste</h1>
     <p class="text-center mb-6">Help us map the flavor of Indian dishes</p>
 
-    <div class="mb-6">
-      <label class="block font-semibold mb-1">Progress</label>
-      <div class="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
-        <div id="progressBar" class="bg-green-500 h-4 transition-all duration-300" style="width: 0%"></div>
-      </div>
-      <p id="progressText" class="text-sm mt-1 text-right text-gray-600">0 of 20 dishes rated</p>
+    <div id="nameInputSection" class="mb-6">
+      <label for="username" class="block font-semibold mb-1">Enter Your Name</label>
+      <input type="text" id="username" name="username" required class="w-full p-2 border border-gray-300 rounded mb-2" placeholder="e.g. Rohit">
+      <button id="startButton" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Start Rating</button>
     </div>
 
-    <form id="tasteForm" class="space-y-6">
-      <div>
-        <label for="username" class="block font-semibold mb-1">Your Name</label>
-        <input type="text" id="username" name="username" required class="w-full p-2 border border-gray-300 rounded" placeholder="Enter your name">
+    <div id="mainFormSection" class="hidden">
+      <div class="mb-6">
+        <label class="block font-semibold mb-1">Progress</label>
+        <div class="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
+          <div id="progressBar" class="bg-green-500 h-4 transition-all duration-300" style="width: 0%"></div>
+        </div>
+        <p id="progressText" class="text-sm mt-1 text-right text-gray-600">0 of 20 dishes rated</p>
       </div>
 
-      <div>
-        <label for="dish" class="block font-semibold mb-1">Dish</label>
-        <select id="dish" required class="w-full p-2 border border-gray-300 rounded">
-          <option value="">Select a dish...</option>
-        </select>
-      </div>
+      <form id="tasteForm" class="space-y-6">
+        <div>
+          <label for="dish" class="block font-semibold mb-1">Dish</label>
+          <select id="dish" required class="w-full p-2 border border-gray-300 rounded">
+            <option value="">Select a dish...</option>
+          </select>
+        </div>
 
-      <div id="currentDish" class="text-lg font-medium text-center text-blue-700"></div>
+        <div id="currentDish" class="text-lg font-medium text-center text-blue-700"></div>
 
-      <div id="sliders" class="space-y-4"></div>
+        <div id="sliders" class="space-y-4"></div>
 
-      <div>
-        <label for="notes" class="block font-semibold mb-1">Notes (optional)</label>
-        <textarea id="notes" class="w-full p-2 border border-gray-300 rounded" rows="2" placeholder="e.g. My version has extra tamarind..."></textarea>
-      </div>
+        <div>
+          <label for="notes" class="block font-semibold mb-1">Notes (optional)</label>
+          <textarea id="notes" class="w-full p-2 border border-gray-300 rounded" rows="2" placeholder="e.g. My version has extra tamarind..."></textarea>
+        </div>
 
-      <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Submit</button>
-    </form>
+        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 w-full">Submit</button>
+      </form>
 
-    <p id="status" class="text-green-600 mt-4 text-center hidden">Submission saved!</p>
-    <button id="switchUserBtn" class="mt-4 text-sm text-red-500 underline w-full">Switch User</button>
+      <p id="status" class="text-green-600 mt-4 text-center hidden">Submission saved!</p>
+      <button id="switchUserBtn" class="mt-4 text-sm text-red-500 underline w-full">Switch User</button>
+    </div>
   </div>
 
   <script>
@@ -58,9 +61,29 @@
 
     const tastes = ["Sweet", "Sour", "Salty", "Bitter", "Umami", "Spicy"];
     const ratedDishes = new Set(JSON.parse(localStorage.getItem("ratedDishes") || "[]"));
+    let username = localStorage.getItem("tasteCollectorUser") || "";
 
     const dishSelect = document.getElementById("dish");
     const currentDishDisplay = document.getElementById("currentDish");
+    const mainFormSection = document.getElementById("mainFormSection");
+    const nameInputSection = document.getElementById("nameInputSection");
+
+    if (username) {
+      nameInputSection.classList.add("hidden");
+      mainFormSection.classList.remove("hidden");
+    }
+
+    document.getElementById("startButton").addEventListener("click", () => {
+      const inputName = document.getElementById("username").value.trim();
+      if (inputName) {
+        username = inputName;
+        localStorage.setItem("tasteCollectorUser", username);
+        nameInputSection.classList.add("hidden");
+        mainFormSection.classList.remove("hidden");
+        updateProgressBar();
+        populateDishOptions();
+      }
+    });
 
     function populateDishOptions() {
       dishSelect.innerHTML = '<option value="">Select a dish...</option>';
@@ -97,13 +120,9 @@
       document.getElementById("progressText").textContent = `${completed} of ${total} dishes rated`;
     }
 
-    updateProgressBar();
-    populateDishOptions();
-
     document.getElementById("tasteForm").addEventListener("submit", async e => {
       e.preventDefault();
 
-      const username = document.getElementById("username").value.trim();
       const taste_vector = tastes.map((_, i) => parseInt(document.getElementById(`taste${i}`).value));
       const dish = dishSelect.value;
       const notes = document.getElementById("notes").value;
@@ -128,9 +147,10 @@
       setTimeout(() => document.getElementById("status").classList.add("hidden"), 3000);
       e.target.reset();
     });
+
     document.getElementById("switchUserBtn").addEventListener("click", () => {
       localStorage.removeItem("tasteCollectorUser");
-      window.location.reload();  // simple way to reset the state
+      window.location.reload();
     });
   </script>
 </body>
