@@ -558,5 +558,33 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:04:40.683Z"
+  },
+  {
+    "user": "harshal",
+    "dish": "Moong Dal Halwa",
+    "taste_vector": [
+      10,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:04:42.903Z"
+  },
+  {
+    "user": "Amita",
+    "dish": "Pani Puri",
+    "taste_vector": [
+      4,
+      7,
+      6,
+      0,
+      0,
+      8
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:04:44.413Z"
   }
 ]
