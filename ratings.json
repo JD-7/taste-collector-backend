@@ -1538,5 +1538,19 @@
     ],
     "notes": "Spicy Chutney is a must",
     "timestamp": "2025-07-25T10:19:02.911Z"
+  },
+  {
+    "user": "Amita",
+    "dish": "Palak Paneer",
+    "taste_vector": [
+      1,
+      7,
+      0,
+      0,
+      1,
+      6
+    ],
+    "notes": "Butter roasted Panner",
+    "timestamp": "2025-07-25T10:20:50.106Z"
   }
 ]
