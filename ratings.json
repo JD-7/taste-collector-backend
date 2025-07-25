@@ -11,6 +11,34 @@
       1
     ],
     "notes": "",
-    "timestamp": "2025-07-25T09:59:06.859Z"
+    "timestamp": "2025-07-25T09:59:18.362Z"
+  },
+  {
+    "user": "Harshal",
+    "dish": "Aamras",
+    "taste_vector": [
+      8,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T09:59:30.914Z"
+  },
+  {
+    "user": "Harshal",
+    "dish": "Aloo Paratha",
+    "taste_vector": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T09:59:33.677Z"
   }
 ]
