@@ -404,5 +404,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:03:54.667Z"
+  },
+  {
+    "user": "Roshni",
+    "dish": "Dhokla",
+    "taste_vector": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:03:56.542Z"
   }
 ]
