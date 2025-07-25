@@ -992,5 +992,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:06:59.598Z"
+  },
+  {
+    "user": "Aditi",
+    "dish": "Moong Dal Halwa",
+    "taste_vector": [
+      9,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:07:08.819Z"
   }
 ]
