@@ -1650,5 +1650,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:24:09.718Z"
+  },
+  {
+    "user": "Amita",
+    "dish": "Chana Masala",
+    "taste_vector": [
+      1,
+      7,
+      0,
+      0,
+      3,
+      6
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:24:42.766Z"
   }
 ]
