@@ -12,5 +12,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T08:56:17.670Z"
+  },
+  {
+    "user": "JD",
+    "dish": "Dhokla",
+    "taste_vector": [
+      10,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T08:56:26.941Z"
   }
 ]
