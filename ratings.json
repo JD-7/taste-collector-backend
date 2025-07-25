@@ -1734,5 +1734,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:27:29.078Z"
+  },
+  {
+    "user": "Amita",
+    "dish": "Besan Ladoo",
+    "taste_vector": [
+      10,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:27:36.922Z"
   }
 ]
