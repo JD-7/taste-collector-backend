@@ -42,31 +42,17 @@
     "timestamp": "2025-07-25T09:59:33.677Z"
   },
   {
-    "user": "Harshal",
+    "user": "Divya",
     "dish": "Aamras",
     "taste_vector": [
-      0,
-      0,
+      9,
+      1,
       0,
       0,
       0,
       0
     ],
     "notes": "",
-    "timestamp": "2025-07-25T10:00:03.418Z"
-  },
-  {
-    "user": "Aditi",
-    "dish": "Aamras",
-    "taste_vector": [
-      10,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "notes": "",
-    "timestamp": "2025-07-25T10:00:55.173Z"
+    "timestamp": "2025-07-25T10:01:10.396Z"
   }
 ]
