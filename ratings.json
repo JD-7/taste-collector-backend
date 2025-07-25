@@ -1566,5 +1566,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:21:30.446Z"
+  },
+  {
+    "user": "Amita",
+    "dish": "Rasam",
+    "taste_vector": [
+      4,
+      7,
+      8,
+      0,
+      2,
+      7
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:22:30.002Z"
   }
 ]
