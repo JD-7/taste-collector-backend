@@ -40,5 +40,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T09:59:33.677Z"
+  },
+  {
+    "user": "Harshal",
+    "dish": "Aamras",
+    "taste_vector": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:00:03.418Z"
   }
 ]
