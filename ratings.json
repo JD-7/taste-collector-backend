@@ -460,5 +460,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:04:09.105Z"
+  },
+  {
+    "user": "harshal",
+    "dish": "Thepla",
+    "taste_vector": [
+      0,
+      5,
+      0,
+      0,
+      0,
+      5
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:04:18.259Z"
   }
 ]
