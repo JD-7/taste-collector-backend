@@ -1020,5 +1020,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:07:10.710Z"
+  },
+  {
+    "user": "Roshni Rathor",
+    "dish": "Vegetable Pulao",
+    "taste_vector": [
+      2,
+      7,
+      0,
+      0,
+      7,
+      9
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:07:18.737Z"
   }
 ]
