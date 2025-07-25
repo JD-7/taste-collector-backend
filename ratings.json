@@ -180,5 +180,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:02:14.689Z"
+  },
+  {
+    "user": "harshal",
+    "dish": "Rasam",
+    "taste_vector": [
+      0,
+      3,
+      5,
+      0,
+      0,
+      6
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:02:26.695Z"
   }
 ]
