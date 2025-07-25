@@ -1328,5 +1328,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:09:13.143Z"
+  },
+  {
+    "user": "Roshni Rathor",
+    "dish": "Aloo Paratha",
+    "taste_vector": [
+      0,
+      7,
+      0,
+      0,
+      4,
+      7
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:09:13.736Z"
   }
 ]
