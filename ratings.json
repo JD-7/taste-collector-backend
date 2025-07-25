@@ -236,5 +236,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:02:36.781Z"
+  },
+  {
+    "user": "Aditi",
+    "dish": "Palak Paneer",
+    "taste_vector": [
+      1,
+      2,
+      0,
+      0,
+      0,
+      7
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:02:47.062Z"
   }
 ]
