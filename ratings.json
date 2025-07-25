@@ -1230,5 +1230,33 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:08:21.610Z"
+  },
+  {
+    "user": "Divya",
+    "dish": "Sabudana Khichdi",
+    "taste_vector": [
+      0,
+      4,
+      0,
+      0,
+      5,
+      6
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:08:23.823Z"
+  },
+  {
+    "user": "Roshni Rathor",
+    "dish": "Paneer Butter Masala",
+    "taste_vector": [
+      3,
+      7,
+      0,
+      0,
+      6,
+      8
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:08:35.228Z"
   }
 ]
