@@ -880,5 +880,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:06:15.872Z"
+  },
+  {
+    "user": "Aditi",
+    "dish": "Thepla",
+    "taste_vector": [
+      2,
+      3,
+      0,
+      0,
+      0,
+      5
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:06:18.466Z"
   }
 ]
