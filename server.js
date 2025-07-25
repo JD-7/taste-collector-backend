@@ -23,6 +23,7 @@ app.post('/submit-rating', (req, res) => {
   }
 
   const entry = { user, dish, taste_vector, notes: notes || "", timestamp };
+  console.log('✅ New submission received:', entry);
 
   // Read existing file (or initialize empty array)
   fs.readFile(RATINGS_FILE, 'utf8', (readErr, data) => {
