@@ -1132,5 +1132,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:07:37.367Z"
+  },
+  {
+    "user": "Aditi",
+    "dish": "Aloo Paratha",
+    "taste_vector": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      7
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:07:37.783Z"
   }
 ]
