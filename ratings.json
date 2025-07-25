@@ -1440,5 +1440,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:11:26.705Z"
+  },
+  {
+    "user": "Amita",
+    "dish": "Paneer Butter Masala",
+    "taste_vector": [
+      5,
+      7,
+      0,
+      0,
+      2,
+      5
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:15:29.186Z"
   }
 ]
