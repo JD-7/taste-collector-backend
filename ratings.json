@@ -376,5 +376,19 @@
     ],
     "notes": "Like my Aamras thick",
     "timestamp": "2025-07-25T10:03:31.688Z"
+  },
+  {
+    "user": "harshal",
+    "dish": "Vegetable Pulao",
+    "taste_vector": [
+      0,
+      5,
+      2,
+      0,
+      0,
+      6
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:03:44.457Z"
   }
 ]
