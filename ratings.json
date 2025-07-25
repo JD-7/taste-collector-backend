@@ -334,5 +334,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:03:19.615Z"
+  },
+  {
+    "user": "Aditi",
+    "dish": "Rasam",
+    "taste_vector": [
+      0,
+      3,
+      4,
+      0,
+      2,
+      6
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:03:22.807Z"
   }
 ]
