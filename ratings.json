@@ -796,5 +796,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:05:41.192Z"
+  },
+  {
+    "user": "Roshni Rathor",
+    "dish": "Pani Puri",
+    "taste_vector": [
+      4,
+      7,
+      8,
+      0,
+      4,
+      8
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:05:54.732Z"
   }
 ]
