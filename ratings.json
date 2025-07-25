@@ -866,5 +866,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:06:09.638Z"
+  },
+  {
+    "user": "Roshni Rathor",
+    "dish": "Rasam",
+    "taste_vector": [
+      3,
+      5,
+      7,
+      0,
+      5,
+      8
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:06:15.872Z"
   }
 ]
