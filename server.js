@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const cors = require('cors');
-const fetch = require('node-fetch'); // Required for GitHub API
+const fetch = require('node-fetch'); // for GitHub sync
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -26,7 +26,6 @@ app.post('/submit-rating', (req, res) => {
   const entry = { user, dish, taste_vector, notes: notes || "", timestamp };
   console.log('✅ New submission received:', entry);
 
-  // Read existing file (or initialize empty array)
   fs.readFile(RATINGS_FILE, 'utf8', (readErr, data) => {
     let ratings = [];
     if (!readErr && data) {
@@ -45,7 +44,6 @@ app.post('/submit-rating', (req, res) => {
         return res.status(500).json({ status: 'error', message: 'File write failed' });
       }
 
-      // ✅ Push to GitHub
       try {
         await pushToGitHub(JSON.stringify(ratings, null, 2));
       } catch (err) {
@@ -65,18 +63,17 @@ async function pushToGitHub(fileContent) {
   const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
   const apiUrl = `https://api.github.com/repos/JD-7/taste-collector-backend/contents/ratings.json`;
 
-  // Step 1: Get SHA of current file
+  // Get existing SHA
   const getRes = await fetch(apiUrl, {
     headers: {
       Authorization: `Bearer ${GITHUB_TOKEN}`,
       Accept: "application/vnd.github.v3+json"
     }
   });
-
   const existing = await getRes.json();
   const sha = existing.sha;
 
-  // Step 2: Commit updated file
+  // Push update
   const commitRes = await fetch(apiUrl, {
     method: "PUT",
     headers: {
@@ -92,5 +89,5 @@ async function pushToGitHub(fileContent) {
   });
 
   const result = await commitRes.json();
-  console.log("📦 GitHub sync:", result.commit?.html_url || result);
+  console.log("📦 Pushed to GitHub:", result.commit?.html_url || result);
 }
