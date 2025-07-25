@@ -600,5 +600,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:04:52.103Z"
+  },
+  {
+    "user": "harshal",
+    "dish": "Vegetable Biryani",
+    "taste_vector": [
+      0,
+      5,
+      0,
+      0,
+      0,
+      8
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:05:04.897Z"
   }
 ]
