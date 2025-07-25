@@ -1720,5 +1720,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:27:09.936Z"
+  },
+  {
+    "user": "Amita",
+    "dish": "Vegetable Biryani",
+    "taste_vector": [
+      4,
+      4,
+      2,
+      0,
+      0,
+      5
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:27:29.078Z"
   }
 ]
