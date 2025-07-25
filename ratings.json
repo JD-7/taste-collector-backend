@@ -1636,5 +1636,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:23:59.197Z"
+  },
+  {
+    "user": "Amita",
+    "dish": "Cucumber Raita",
+    "taste_vector": [
+      6,
+      4,
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:24:09.718Z"
   }
 ]
