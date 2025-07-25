@@ -530,5 +530,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:04:28.671Z"
+  },
+  {
+    "user": "Aditi",
+    "dish": "Coconut Chutney",
+    "taste_vector": [
+      4,
+      2,
+      2,
+      0,
+      2,
+      5
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:04:33.607Z"
   }
 ]
