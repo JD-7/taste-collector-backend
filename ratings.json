@@ -166,5 +166,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:02:10.450Z"
+  },
+  {
+    "user": "harshal",
+    "dish": "Pani Puri",
+    "taste_vector": [
+      0,
+      5,
+      5,
+      0,
+      0,
+      8
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:02:14.689Z"
   }
 ]
