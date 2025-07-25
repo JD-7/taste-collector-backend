@@ -936,5 +936,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:06:27.832Z"
+  },
+  {
+    "user": "Aditi",
+    "dish": "Sabudana Khichdi",
+    "taste_vector": [
+      6,
+      4,
+      0,
+      0,
+      0,
+      4
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:06:28.846Z"
   }
 ]
