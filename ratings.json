@@ -250,5 +250,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:02:47.062Z"
+  },
+  {
+    "user": "Aditi",
+    "dish": "Masala Dosa",
+    "taste_vector": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:02:49.578Z"
   }
 ]
