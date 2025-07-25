@@ -1286,5 +1286,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:08:45.490Z"
+  },
+  {
+    "user": "Roshni Rathor",
+    "dish": "Vegetable Biryani",
+    "taste_vector": [
+      2,
+      7,
+      0,
+      7,
+      0,
+      8
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:08:48.409Z"
   }
 ]
