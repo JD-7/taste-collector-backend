@@ -1,61 +1,5 @@
 [
   {
-    "user": "JD",
-    "dish": "Aamras",
-    "taste_vector": [
-      10,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "notes": "",
-    "timestamp": "2025-07-25T08:56:17.670Z"
-  },
-  {
-    "user": "JD",
-    "dish": "Dhokla",
-    "taste_vector": [
-      10,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "notes": "",
-    "timestamp": "2025-07-25T08:56:26.941Z"
-  },
-  {
-    "user": "JD",
-    "dish": "Palak Paneer",
-    "taste_vector": [
-      10,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "notes": "",
-    "timestamp": "2025-07-25T08:56:29.868Z"
-  },
-  {
-    "user": "JD",
-    "dish": "Masala Dosa",
-    "taste_vector": [
-      10,
-      0,
-      0,
-      0,
-      0,
-      0
-    ],
-    "notes": "",
-    "timestamp": "2025-07-25T08:56:31.877Z"
-  },
-  {
     "user": "Harshal",
     "dish": "Aamras",
     "taste_vector": [
@@ -67,6 +11,6 @@
       1
     ],
     "notes": "",
-    "timestamp": "2025-07-25T09:59:03.787Z"
+    "timestamp": "2025-07-25T09:59:06.859Z"
   }
 ]
