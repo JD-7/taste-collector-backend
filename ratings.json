@@ -1496,5 +1496,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:16:08.106Z"
+  },
+  {
+    "user": "Amita",
+    "dish": "Rajma Chawal",
+    "taste_vector": [
+      0,
+      7,
+      0,
+      0,
+      0,
+      6
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:16:20.568Z"
   }
 ]
