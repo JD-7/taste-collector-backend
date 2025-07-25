@@ -1202,5 +1202,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:08:07.683Z"
+  },
+  {
+    "user": "Roshni Rathor",
+    "dish": "Sabudana Khichdi",
+    "taste_vector": [
+      3,
+      7,
+      0,
+      0,
+      5,
+      8
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:08:13.280Z"
   }
 ]
