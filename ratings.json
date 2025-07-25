@@ -1300,5 +1300,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:08:48.409Z"
+  },
+  {
+    "user": "Roshni Rathor",
+    "dish": "Besan Ladoo",
+    "taste_vector": [
+      8,
+      0,
+      0,
+      0,
+      2,
+      0
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:08:58.640Z"
   }
 ]
