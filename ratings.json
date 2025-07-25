@@ -1356,5 +1356,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:09:22.101Z"
+  },
+  {
+    "user": "Roshni Rathor",
+    "dish": "Rajma Chawal",
+    "taste_vector": [
+      2,
+      6,
+      1,
+      0,
+      6,
+      8
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:09:30.031Z"
   }
 ]
