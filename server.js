@@ -2,7 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const cors = require('cors');
-const fetch = require('node-fetch'); // for GitHub sync
+const fetch = (...args) => import('node-fetch').then(({ default: fetch }) => fetch(...args)); // for GitHub sync
 
 const app = express();
 const PORT = process.env.PORT || 3000;
