@@ -348,5 +348,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:03:22.807Z"
+  },
+  {
+    "user": "harshal",
+    "dish": "Kadhi",
+    "taste_vector": [
+      0,
+      5,
+      5,
+      0,
+      0,
+      6
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:03:29.076Z"
   }
 ]
