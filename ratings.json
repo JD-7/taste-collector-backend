@@ -852,5 +852,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:06:03.773Z"
+  },
+  {
+    "user": "Divya",
+    "dish": "Gajar Halwa",
+    "taste_vector": [
+      9,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:06:09.638Z"
   }
 ]
