@@ -768,5 +768,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:05:38.787Z"
+  },
+  {
+    "user": "Roshni Rathor",
+    "dish": "Masala Dosa",
+    "taste_vector": [
+      0,
+      7,
+      3,
+      0,
+      5,
+      8
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:05:38.174Z"
   }
 ]
