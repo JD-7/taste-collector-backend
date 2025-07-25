@@ -1174,5 +1174,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:07:48.897Z"
+  },
+  {
+    "user": "Roshni Rathor",
+    "dish": "Thepla",
+    "taste_vector": [
+      1,
+      6,
+      1,
+      0,
+      4,
+      7
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:07:56.650Z"
   }
 ]
