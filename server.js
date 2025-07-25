@@ -2,6 +2,7 @@ const express = require('express');
 const fs = require('fs');
 const path = require('path');
 const cors = require('cors');
+const fetch = require('node-fetch'); // Required for GitHub API
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -38,11 +39,19 @@ app.post('/submit-rating', (req, res) => {
 
     ratings.push(entry);
 
-    fs.writeFile(RATINGS_FILE, JSON.stringify(ratings, null, 2), (writeErr) => {
+    fs.writeFile(RATINGS_FILE, JSON.stringify(ratings, null, 2), async (writeErr) => {
       if (writeErr) {
         console.error("❌ Failed to write file:", writeErr);
         return res.status(500).json({ status: 'error', message: 'File write failed' });
       }
+
+      // ✅ Push to GitHub
+      try {
+        await pushToGitHub(JSON.stringify(ratings, null, 2));
+      } catch (err) {
+        console.error("⚠️ GitHub sync failed:", err);
+      }
+
       res.json({ status: 'success' });
     });
   });
@@ -51,3 +60,37 @@ app.post('/submit-rating', (req, res) => {
 app.listen(PORT, () => {
   console.log(`🔥 Server running on port ${PORT}`);
 });
+
+async function pushToGitHub(fileContent) {
+  const GITHUB_TOKEN = process.env.GITHUB_TOKEN;
+  const apiUrl = `https://api.github.com/repos/JD-7/taste-collector-backend/contents/ratings.json`;
+
+  // Step 1: Get SHA of current file
+  const getRes = await fetch(apiUrl, {
+    headers: {
+      Authorization: `Bearer ${GITHUB_TOKEN}`,
+      Accept: "application/vnd.github.v3+json"
+    }
+  });
+
+  const existing = await getRes.json();
+  const sha = existing.sha;
+
+  // Step 2: Commit updated file
+  const commitRes = await fetch(apiUrl, {
+    method: "PUT",
+    headers: {
+      Authorization: `Bearer ${GITHUB_TOKEN}`,
+      Accept: "application/vnd.github.v3+json"
+    },
+    body: JSON.stringify({
+      message: "🔄 Auto-update ratings.json",
+      content: Buffer.from(fileContent).toString("base64"),
+      sha,
+      branch: "master"
+    })
+  });
+
+  const result = await commitRes.json();
+  console.log("📦 GitHub sync:", result.commit?.html_url || result);
+}
