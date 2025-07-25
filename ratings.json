@@ -1510,5 +1510,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:16:20.568Z"
+  },
+  {
+    "user": "Amita",
+    "dish": "Aamras",
+    "taste_vector": [
+      9,
+      0,
+      3,
+      0,
+      0,
+      0
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:18:17.953Z"
   }
 ]
