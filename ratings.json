@@ -110,5 +110,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:01:34.105Z"
+  },
+  {
+    "user": "harshal",
+    "dish": "Palak Paneer",
+    "taste_vector": [
+      0,
+      2,
+      0,
+      0,
+      0,
+      7
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:01:36.947Z"
   }
 ]
