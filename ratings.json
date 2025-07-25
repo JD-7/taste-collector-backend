@@ -1552,5 +1552,19 @@
     ],
     "notes": "Butter roasted Panner",
     "timestamp": "2025-07-25T10:20:50.106Z"
+  },
+  {
+    "user": "Amita",
+    "dish": "Masala Dosa",
+    "taste_vector": [
+      2,
+      7,
+      3,
+      0,
+      3,
+      7
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:21:30.446Z"
   }
 ]
