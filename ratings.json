@@ -656,5 +656,19 @@
     ],
     "notes": "",
     "timestamp": "2025-07-25T10:05:06.842Z"
+  },
+  {
+    "user": "harshal",
+    "dish": "Besan Ladoo",
+    "taste_vector": [
+      10,
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    "notes": "",
+    "timestamp": "2025-07-25T10:05:14.458Z"
   }
 ]
